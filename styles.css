@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 3.77em;
+}
+
+h2 {
+    font-size: 2.11em;
+}
+
+h3 {
+    font-size: 1.55em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.orange {
+    color: #f0a202
+}
+
+.clover {
+    color: #008F00;
+}
+
+.salmon {
+    color: #FF7E79;
+}
+
