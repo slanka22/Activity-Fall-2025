@@ -5,25 +5,14 @@
 }
 
 
-h1 {
-    font-size: 3.77em;
+body {
+    font-family: Helvetica, Georgia, sans-serif;
 }
 
-h2 {
-    font-size: 2.11em;
-}
-
-h3 {
-    font-size: 1.55em;
-}
-
-h4 {
-    font-size: 1em;
-}
 
 h1, h2, h3, h4, h5 {
-    margin: 0 0 20px 0;
-    line-height: 1.2;
+    margin: 10px 0 10px 0;
+    line-height: 1.5;
     font-weight: bold;
 }
 
@@ -35,15 +24,15 @@ section {
     transform: translate(-50%, -50%);
 }
 
-.orange {
-    color: #f0a202
+table {
+    border-collapse: collapse;
+    width: 300px;
 }
 
-.clover {
-    color: #008F00;
+td,
+th {
+    padding: 0.2em;
+    text-align: left;
 }
 
-.salmon {
-    color: #FF7E79;
-}
-
+/* your code here */
