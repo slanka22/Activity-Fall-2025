@@ -35,4 +35,15 @@ th {
     text-align: left;
 }
 
-/* your code here */
+h2 + p {
+    font-weight: bold;
+}
+
+h2 + p::first-line {
+    color: red;
+}
+
+tr:nth-child(even) {
+    background-color: #333333;
+    color: white;
+}
