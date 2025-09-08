@@ -16,34 +16,12 @@ h1, h2, h3, h4, h5 {
     font-weight: bold;
 }
 
-section {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+.absolute {
+    background-color: yellow;
 }
 
-table {
-    border-collapse: collapse;
-    width: 300px;
+.relative {
+    position: relative;
 }
 
-td,
-th {
-    padding: 0.2em;
-    text-align: left;
-}
 
-h2 + p {
-    font-weight: bold;
-}
-
-h2 + p::first-line {
-    color: red;
-}
-
-tr:nth-child(even) {
-    background-color: #333333;
-    color: white;
-}
