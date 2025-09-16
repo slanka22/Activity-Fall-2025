@@ -16,16 +16,19 @@ h1, h2, h3, h4, h5 {
     font-weight: bold;
 }
 
-article {
-    min-width: 400px;
-    padding: 10px;
-    margin: 10px;
-    background: #96BEE650;
+
+.container {
+    display: grid;
+    grid-template-columns: 5em 100px 30%;
+    grid-template-rows: 200px auto;
+    gap: 10px;
 }
 
-section {
-    display: flex;
-    flex-flow: row;
+.container > div {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #96BEE6;
+  border: 2px solid #E98300;
 }
 
 
