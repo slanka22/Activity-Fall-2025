@@ -16,13 +16,6 @@ h1, h2, h3, h4, h5 {
     font-weight: bold;
 }
 
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 20px;
-}
-
 header,
 footer {
   border-radius: 5px;
@@ -35,20 +28,22 @@ aside {
   border-right: 1px solid #E98300;
 }
 
-/* Set grid-column and grid-row */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+
 header {
-  grid-column: 1 / 3;
-  grid-row: 1;
+  grid-area: header;
 }
 main {
-  grid-column: 2;
-  grid-row: 2;
+  grid-area: content;
 }
 aside {
-  grid-column: 1;
-  grid-row: 2;
+  grid-area: sidebar;
 }
 footer {
-  grid-column: 1 / 3;
-  grid-row: 3;
+  grid-area: footer;
 }
