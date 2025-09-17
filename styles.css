@@ -18,32 +18,36 @@ h1, h2, h3, h4, h5 {
 
 header,
 footer {
-  border-radius: 5px;
-  padding: 10px;
-  background-color: #96BEE6;
-  color: whitesmoke;
-  text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #96BEE6;
+    color: whitesmoke;
+    text-align: center;
 }
 aside {
-  border-right: 1px solid #E98300;
+    border-right: 1px solid #E98300;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
     gap: 20px;
 }
 
 
 header {
-  grid-area: header;
+    grid-area: header;
 }
 main {
-  grid-area: content;
+    grid-area: content;
 }
 aside {
-  grid-area: sidebar;
+    grid-area: sidebar;
 }
 footer {
-  grid-area: footer;
+    grid-area: footer;
 }
