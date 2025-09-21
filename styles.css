@@ -28,3 +28,15 @@ section {
     flex-flow: row wrap;
 }
 
+@media (min-width: 500px) and (max-width: 600px) {
+    article {
+        background: #F2665E;
+    }
+}
+
+@media (width <= 400px) {
+    article {
+        min-width: unset;
+        flex: 1;
+    }
+}
