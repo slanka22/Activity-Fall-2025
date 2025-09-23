@@ -449,3 +449,19 @@ label.margin-toggle:not(.sidenote-number) {
         width: 100%;
     }
 }
+
+@media (display-mode: browser) {
+    figure::after {
+        content: "\APlease install the app!";
+        white-space: pre;
+        font-weight: bold;
+    }
+}
+
+@media (display-mode: standalone), (display-mode: fullscreen), (display-mode: minimal-ui) {
+    figure::after {
+        content: "\AThanks for installing the app!";
+        white-space: pre;
+        font-weight: bold;
+    }
+}
