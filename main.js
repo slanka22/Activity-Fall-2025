@@ -26,6 +26,14 @@ const colleges = [
 // Update text in para
 // content.textContent = choice;
 
+const chooseCollege = () => {
+    const randomNumber = Math.floor(Math.random() * colleges.length);
+    const choice = colleges[randomNumber];
+    console.log(choice);
+    content.textContent = choice;
+
+}
+
 
 const btn = document.querySelector("button");
 btn.addEventListener("click", chooseCollege);
