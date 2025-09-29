@@ -29,8 +29,8 @@ const colleges = [
 const chooseCollege = () => {
     const randomNumber = Math.floor(Math.random() * colleges.length);
     const choice = colleges[randomNumber];
-    console.log(choice);
-    content.textContent = choice;
+    console.log(choice.name);
+    content.textContent = choice.name;
 
 }
 
