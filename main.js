@@ -38,3 +38,16 @@ const chooseCollege = () => {
 const btn = document.querySelector("button");
 btn.addEventListener("click", chooseCollege);
 const content = document.querySelector("#college");
+
+const h1 = document.querySelector("h1");
+
+h1.addEventListener("mouseenter", (event) => {
+    console.log("entered");
+    event.target.style.color = "red";
+});
+
+
+h1.addEventListener("mouseleave", (event) => {
+    console.log("left");
+    event.target.style.color = "black";
+});
