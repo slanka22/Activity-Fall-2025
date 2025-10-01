@@ -12,6 +12,7 @@ const startVideo = (event) => {
     const media = navigator.mediaDevices.getUserMedia({ video: true });
 
     // TODO: Add your success and error functions
+    media.then(onSuccess, onError);
 };
 
 
