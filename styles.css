@@ -47,3 +47,35 @@ section {
     color: #FF7E79;
 }
 
+#webcam {
+    border: 1px solid;
+    width: 400px;
+    max-inline-size: 100%;
+}
+
+button {
+    margin: 1em;
+    background-color: #EA4C89;
+    font-weight: 500;
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    height: 40px;
+    line-height: 10px;
+    outline: none;
+    padding: 16px 16px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    max-inline-size: 100%;
+}
+
