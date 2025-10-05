@@ -38,11 +38,45 @@ const addOverviewContent = () => {
 
 };
 
+const createAListElement = (text) => {
 
-const addObjectiveContent = () => {
-    console.log("Add objective!");
+    const li = document.createElement("li");
+    const p = document.createElement("p");
+    const t = document.createTextNode(text);
+
+    p.appendChild(t);
+    li.appendChild(p);
+
+    return li;
 };
 
+const addObjectiveContent = () => {
+    const section = document.createElement("section");
+
+    const h2 = document.createElement("h2");
+    h2.id = "learning-objectives";
+    h2.textContent = "Learning Objectives";
+    section.appendChild(h2);
+
+    const ul = document.createElement("ul");
+    let li = createAListElement("Become familiar with processes and tools for PWA design and development");
+    ul.appendChild(li);
+
+    li = createAListElement("Understand design requirements and guidelines for PWAs");
+    ul.appendChild(li);
+
+    li = createAListElement("Translate design ideas into functional prototypes and applications");
+    ul.appendChild(li);
+
+    li = createAListElement("Learn to use generative AI tool to support PWA design and development");
+    ul.appendChild(li);
+
+    section.append(ul);
+
+    const sectionOverview = document.querySelector("#section-overview");
+    sectionOverview.after(section);
+
+}
 
 document.querySelector("#btn_header")
     .addEventListener("click", addHeaderContent);
