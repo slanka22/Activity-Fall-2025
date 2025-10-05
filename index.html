@@ -5,17 +5,25 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <script src="./main.js" defer></script>
-        <title>HCDD 340 — Activity 14</title>
+        <title>HCDD 340 — Activity 16</title>
     </head>
 
     <body>
         <section>
-            <h1>HCDD 340: Goals</h1>
-            <h2><span class="clover">Learn</span> about exciting things. Get your CV &amp; portfolio shining. Have fun!</h2>
+            <h2>HCDD 340: Modules</h2>
 
-            <button>Get a college!</button>
-            <h4 id="college"></h4>
+                <label for="module">Enter a module:</label>
+                <input type="text" name="module" id="module">
+                <button id="btn_add" class="tufte-button">Add a module!</button>
+
+            <div>
+                <ul id="modules">
+                </ul>
+            </div>
         </section>
 
     </body>
