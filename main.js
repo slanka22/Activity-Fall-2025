@@ -1,5 +1,17 @@
 const addHeaderContent = () => {
-    console.log("Add header!");
+    const header = document.querySelector("#title-block-header");
+
+    const h1 = document.createElement("h1");
+    h1.textContent = "PWA for HCDD 340";
+    h1.setAttribute("class", "title");
+    header.appendChild(h1);
+
+    const p = document.createElement("p");
+    p.setAttribute("class", "subtitle");
+    const t = document.createTextNode("Progressive Web App");
+    p.appendChild(t);
+    header.appendChild(p);
+
 };
 
 const addOverviewContent = () => {
