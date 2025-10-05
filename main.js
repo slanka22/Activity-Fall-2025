@@ -15,6 +15,9 @@ const addModule = (event) => {
     listBtn.setAttribute("class", "tufte-button primary");
     list.appendChild(listItem);
 
+    listBtn.addEventListener('click', () => {
+        list.removeChild(listItem);
+    });
 };
 
 document.querySelector("#btn_add")
