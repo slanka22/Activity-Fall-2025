@@ -18,6 +18,10 @@ const addModule = (event) => {
     listBtn.addEventListener('click', () => {
         list.removeChild(listItem);
     });
+
+    // clear the textbox
+    input.value = "";
+
 };
 
 document.querySelector("#btn_add")
