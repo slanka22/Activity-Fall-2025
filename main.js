@@ -53,6 +53,23 @@ const saveModule = (event) => {
 };
 
 const loadModule = (event) => {
+    const data = localStorage.getItem("modules")
+    if (data === null) {
+        // do nothing
+        return;
+    }
+
+    try {
+        const list = document.querySelector("ul");
+
+        const items = JSON.parse(data);
+        for (const item of items) {
+            addAListItem(item);
+        }
+    } catch(error) {
+        console.log(`Unable to load modules: ${error}`);
+    }
+
 };
 
 document.querySelector("#btn_add")
