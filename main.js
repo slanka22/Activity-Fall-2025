@@ -37,6 +37,19 @@ const addModule = (event) => {
 };
 
 const saveModule = (event) => {
+    const list = document.querySelector("ul");
+    const items = [];
+
+    for (const item of list.children) {
+        // List has two children — module name and the delete button
+        // we want the first element only
+        const moduleName = item.children[0].textContent;
+        items.push(moduleName);
+    }
+
+    // We will save as an JSON object
+    localStorage.setItem("modules", JSON.stringify(items));
+
 };
 
 const loadModule = (event) => {
