@@ -15,6 +15,10 @@ const addModule = (event) => {
     listBtn.setAttribute("class", "tufte-button primary");
     list.appendChild(listItem);
 
+    // clear the textbox
+    input.value = "";
+
+
 };
 
 document.querySelector("#btn_add")
