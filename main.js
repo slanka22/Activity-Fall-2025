@@ -1,23 +1,36 @@
-const addModule = (event) => {
-    const list = document.querySelector('ul');
-    const input = document.querySelector('input');
+const addAListItem = (text) => {
+    /*
+     * Adds a new list item with the given text and a Delete button.
+     */
 
-    const moduleName = input.value;
+    if (text.length === 0) {
+        // Won't add empty strings
+        return;
+    }
 
-    const listItem = document.createElement('li');
-    const listText = document.createElement('span');
-    const listBtn = document.createElement('button');
+    const list = document.querySelector("ul");
+    const listItem = document.createElement("li");
+    const listText = document.createElement("span");
+    const listBtn = document.createElement("button");
 
     listItem.appendChild(listText);
-    listText.textContent = moduleName;
+    listText.textContent = text;
     listItem.appendChild(listBtn);
-    listBtn.textContent = 'Delete';
+    listBtn.textContent = "Delete";
     listBtn.setAttribute("class", "tufte-button primary");
     list.appendChild(listItem);
 
-    listBtn.addEventListener('click', () => {
+    listBtn.addEventListener("click", () => {
         list.removeChild(listItem);
     });
+
+
+}
+const addModule = (event) => {
+    const input = document.querySelector("input");
+
+    const moduleName = input.value;
+    addAListItem(moduleName);
 
     // clear the textbox
     input.value = "";
