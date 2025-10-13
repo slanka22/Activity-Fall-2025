@@ -102,6 +102,14 @@ li button {
     font-size: 0.9rem;
 }
 
+.centerd {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+
 
 .tufte-button {
     display: inline-block;

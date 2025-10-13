@@ -20,5 +20,18 @@ const addModule = (event) => {
     });
 };
 
+const saveModule = (event) => {
+};
+
+const loadModule = (event) => {
+};
+
 document.querySelector("#btn_add")
     .addEventListener("click", addModule);
+
+
+document.querySelector("#btn_save")
+    .addEventListener("click", saveModule);
+
+document.querySelector("#btn_load")
+    .addEventListener("click", loadModule);
