@@ -1,15 +1,13 @@
-import {dayName} from "./dayname.js";
+// import requirements
+// from canvas.js: create, createReportList
+// from square.js: draw, reportArea, reportPerimeter, randomSquare
+//
+let myCanvas = create('myCanvas', document.body, 480, 320);
+let reportList = createReportList(myCanvas.id);
 
-const getDate = () => {
-    const datePicker = document.querySelector("#selectedDate");
-    if (!datePicker.value) {
-        console.error("No date selected");
-        return;
-    }
-    const d = new Date(datePicker.value);
-    const name = dayName(d.getDay());
-    console.log(name);
-};
-document.querySelector("#btn_submit")
-    .addEventListener("click", getDate);
+let square1 = draw(myCanvas.ctx, 50, 50, 100, 'blue');
+reportArea(square1.length, reportList);
+reportPerimeter(square1.length, reportList);
 
+// Use the default
+let square2 = randomSquare(myCanvas.ctx);
