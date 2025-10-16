@@ -52,3 +52,5 @@ function randomSquare(ctx) {
         color: color
     };
 }
+
+export { name, draw, reportArea, reportPerimeter, randomSquare };
