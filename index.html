@@ -8,27 +8,26 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <script src="./main.js" defer></script>
-        <title>HCDD 340 — Activity 20</title>
+        <script type="module" src="./main.js"></script>
+        <title>HCDD 340 — Activity 21</title>
     </head>
 
     <body>
         <section>
-            <h2>HCDD 340: Modules</h2>
+            <h2>JS Modules</h2>
 
-            <label for="module">Enter a module:</label>
-            <input type="text" name="module" id="module">
-            <button id="btn_add" class="tufte-button">Add a module!</button>
-
-
-            <div>
-                <ul id="modules">
-                </ul>
-            </div>
             <div class="centerd">
-                <button id="btn_save" class="tufte-button">Save modules</button>
-                <button id="btn_load" class="tufte-button">Load modules</button>
+                <label for="selectedDate">Select a date: </label>
+                <input
+                        type="date"
+                        id="selectedDate"
+                        name="selectedDate"/>
             </div>
+
+            <div class="centerd">
+                <button id="btn_submit" class="tufte-button">Submit</button>
+            </div>
+
         </section>
 
     </body>
