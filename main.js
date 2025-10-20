@@ -6,8 +6,9 @@ const getDate = () => {
         console.error("No date selected");
         return;
     }
-    const d = new Date(datePicker.value);
-    const name = dayName(d.getDay());
+    const d = new Date(datePicker.value)
+    const dayOfTheWeek = d.getDay()
+    const name = dayName(dayOfTheWeek);
     console.log(name);
 };
 document.querySelector("#btn_submit")
