@@ -8,24 +8,73 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <script src="./main.js" defer></script>
-        <title>HCDD 340 — Activity 19</title>
+        <title>HCDD 340 — Activity 23</title>
     </head>
 
     <body>
-        <section>
-            <h2>HCDD 340: Modules</h2>
+        <!-- From https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/Test_your_skills/HTML --->
+        <header>
+            <img
+                    src="https://mdn.github.io/shared-assets/images/examples/star-pink_32x32.png"
+                    alt="A star that I use to decorate my page" />
+            <h1>Groovy images</h1>
+        </header>
+        <main>
+            <section>
+                <font size="7">Need help?</font> <br /><br />
+                If you have any problems with our products, our support center can offer you all
+                the help you need, whether you want:
+                <br /><br />
+                1. Advice choosing a new product
+                <br />
+                2. Tech support on an existing product
+                <br />
+                3. Refund and cancellation assistance
+                <br /><br />
+                <font size="5">Contact us now</font>
+                <br /><br />
+                Our help center contains live chat, email addresses, and phone numbers.
+                <br /><br />
+                <div class="button">Find Contact Details</div>
+                <br />
+                <font size="5">Find out answers</font>
+                <br /><br />
+                Our Forums section contains a large knowledge base of searchable previously
+                asked questions, and you can always ask a new question if you can't find the
+                answer you're looking for.
+                <br /><br />
+                <div class="button">Access Forums</div>
+            </section>
 
-                <label for="module">Enter a module:</label>
-                <input type="text" name="module" id="module">
-                <button id="btn_add" class="tufte-button">Add a module!</button>
+            <section>
+                <form>
+                    <ul>
+                        <li>
+                            Name
+                            <input type="text" name="name" />
+                        </li>
+                        <li>
+                            Age
+                            <input type="number" name="age" />
+                        </li>
+                        <li>
+                            Email address
+                            <input type="email" name="email" />
+                        </li>
+                    </ul>
+                </form>
+            </section>
 
-            <div>
-                <ul id="modules">
-                </ul>
-            </div>
-        </section>
+            <section>
+                <img
+                        src="https://mdn.github.io/shared-assets/images/examples/ballon-portrait.jpg" />
+                <img
+                        src="https://mdn.github.io/shared-assets/images/examples/grapefruit-slice.jpg" />
+            </section>
 
+        </main>
     </body>
 
 </html>
+
+
