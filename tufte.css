@@ -465,3 +465,36 @@ label.margin-toggle:not(.sidenote-number) {
         font-weight: bold;
     }
 }
+
+#section-buttons {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: start;
+    align-items: center;
+}
+
+
+/* Base button style */
+.tufte-button {
+  display: inline-block;
+  padding: 0.5em 1.25em; /* Ample padding for a good tap target */
+  border: 2px solid #111;
+  border-radius: 10px 10px;
+  font-family: inherit;
+  font-size: 1.4rem;
+  line-height: inherit;
+  background-color: transparent;
+  color: #111;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Hover and active states */
+.tufte-button:hover{
+  background-color: #f5f5f5; /* A very subtle background change on hover */
+  color: #111;
+  box-shadow: none; /* Explicitly remove any default box-shadows */
+  outline: none; /* Remove focus outline, which can look jarring */
+}
